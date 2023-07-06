@@ -1,3 +1,4 @@
+import 'package:calculator/homepage.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -12,24 +13,10 @@ class MyApp extends StatelessWidget {
     return  MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.green
+        primarySwatch: Colors.red
       ),
       title: "Flutter Calculator",
       home: const HomePage(),
     );
-  }
-}
-
-class HomePage extends StatefulWidget {
-  const HomePage({super.key});
-
-  @override
-  State<HomePage> createState() => _HomePageState();
-}
-
-class _HomePageState extends State<HomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return const Scaffold();
   }
 }
